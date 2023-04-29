@@ -20,16 +20,27 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const shapes = require('./Classes/shapes');
+const {Triangle, Circle, Square} = require('./Classes/shapes');
 
 
 // function to create logo based on user input
 function generateLogo(data) {
- return 
-  data.text
+// if statement for each shape
+var shape = new Circle("blue");
+
+return `<svg>
+
+<text>${data.text}</text>
+
+${shape.createShape()}
+ 
+ </svg>`
+  
 
 
 }
+
+// 
 
 // prompts
 inquirer
@@ -59,7 +70,6 @@ inquirer
 
   .then((data) => {
     const logoOutput = generateLogo(data);
-    generateLogo(data);
     fs.writeFile('logo.svg', logoOutput, (err) =>
       err ? console.error(err) : console.log('Generated logo.svg')
     );

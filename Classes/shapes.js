@@ -1,36 +1,39 @@
 // creating parent Shape class
 class Shape {
-  constructor(text, textColor, shapeColor) {
-    this.text = text;
-    this.textColor = textColor;
+  constructor(shapeColor) {
     this.shapeColor = shapeColor;
   }
 }
 
-// creating child Triangle class and inheriting properties
-class Triangle extends Shape {
-  constructor(text, textColor, shape, shapeColor) {
-    super(text, textColor, shapeColor);
-    this.shape = shape;
-  }
-}
+// // creating child Triangle class and inheriting properties
+// class Triangle extends Shape {
+//     super(shapeColor)
+//     // add method for creating specific shape
+//     createShape() {
+
+//       return 
+//     }
+//   }
+
 
 // creating child Circle class and inheriting properties
+// Tutor John Titus helped me come up with the method for creating the shapes
 class Circle extends Shape {
-  constructor(text, textColor, shape, shapeColor) {
-    super(text, textColor, shapeColor);
-    this.shape = shape;
+  constructor(shapeColor) {
+    super(shapeColor)
+  }
+  // add method for creating specific shape
+  createShape() {
+    return `<circle cx="150" cy="100" r="75" fill="${this.shapeColor}"/>`
   }
 }
 
-// creating child Square class and inheriting properties
-class Square extends Shape {
-  constructor(text, textColor, shape, shapeColor) {
-    super(text, textColor, shapeColor);
-    this.shape = shape;
-  }
-}
+// // creating child Square class and inheriting properties
+// class Square extends Shape {
+//     super(shapeColor)
+//     // add method for creating specific shape
+// }
 
 
 
-module.exports = {Shape, Triangle, Circle, Square}
+module.exports = {Triangle, Circle, Square}

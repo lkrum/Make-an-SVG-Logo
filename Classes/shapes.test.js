@@ -7,7 +7,7 @@ describe('shape testing', () => {
     it('should take in user shape and color inputs and generates expected result', () => {
       const shape = new Triangle();
       shape.setColor("blue");
-      expect(generateLogo).toEqua('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+      expect().toEqua('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
     });
   });
 });

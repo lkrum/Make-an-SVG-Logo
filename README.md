@@ -3,7 +3,6 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
-As someone who has spent 8+ years in writing and editing fields, I can tell you that writing isn't always easy. I've created a README generator that developers can use to create professional-looking READMEs for their applications. The generated README includes sections for a table of contents, a description, installation instructions, usage instructions, license information, contribution guidelines, test instructions, and questions for how to contact the user.
 
 Link to video demo: 
 
