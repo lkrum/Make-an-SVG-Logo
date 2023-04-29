@@ -13,6 +13,11 @@
 // WHEN I open the `logo.svg` file in a browser
 // THEN I am shown a 300x200 pixel image that matches the criteria I entered
 
+// To do:
+// create a function that lets user input text choices (DONE)
+// create a function that generates a logo based on user's inputs
+// test the function with Jest
+
 const inquirer = require('inquirer');
 const fs = require('fs');
 const shapes = require('./Classes/shapes');
@@ -20,7 +25,8 @@ const shapes = require('./Classes/shapes');
 
 // function to create logo based on user input
 function generateLogo(data) {
- data.text
+ return 
+  data.text
 
 
 }
@@ -54,7 +60,7 @@ inquirer
   .then((data) => {
     const logoOutput = generateLogo(data);
     generateLogo(data);
-    fs.writeFile('example.svg', logoOutput, (err) =>
+    fs.writeFile('logo.svg', logoOutput, (err) =>
       err ? console.error(err) : console.log('Generated logo.svg')
     );
   });
