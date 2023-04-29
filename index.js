@@ -20,22 +20,19 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Triangle, Circle, Square} = require('./Classes/shapes');
+const {Circle} = require('./Classes/shapes');
 
 
 // function to create logo based on user input
 function generateLogo(data) {
 // if statement for each shape
-var shape = new Circle("blue");
+var shape = new Circle();
+return `<svg width="300" height="200">
+${shape.createShape(data)}
+<text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
 
-return `<svg>
+</svg>`
 
-<text>${data.text}</text>
-
-${shape.createShape()}
- 
- </svg>`
-  
 
 
 }

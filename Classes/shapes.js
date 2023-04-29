@@ -23,8 +23,8 @@ class Circle extends Shape {
     super(shapeColor)
   }
   // add method for creating specific shape
-  createShape() {
-    return `<circle cx="150" cy="100" r="75" fill="${this.shapeColor}"/>`
+  createShape(data) {
+    return `<circle cx = "150" cy = "100" r = "75" fill = "${data.shapeColor}" />`
   }
 }
 
@@ -36,4 +36,4 @@ class Circle extends Shape {
 
 
 
-module.exports = {Triangle, Circle, Square}
+module.exports = {Circle}

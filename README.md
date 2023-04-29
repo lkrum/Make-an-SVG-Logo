@@ -31,6 +31,8 @@ OR
 ## Credits 
 - [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4)
 - [Jest Package](https://www.npmjs.com/package/jest)
+- [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started) for how to write SVG files and getting the coordinates for shapes
+- [codepen](https://codepen.io/pen/) to test what my image would look like
 
 ## License
 MIT License

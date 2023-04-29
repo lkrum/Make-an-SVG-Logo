@@ -1,7 +1,5 @@
-<svg>
+<svg width="300" height="200">
+<circle cx = "150" cy = "100" r = "75" fill = "blue" />
+<text x="150" y="120" font-size="60" text-anchor="middle" fill="white">Tay</text>
 
-<text>LRK</text>
-
-<circle cx="150" cy="100" r="75" fill="blue"/>
- 
- </svg>
+</svg>
