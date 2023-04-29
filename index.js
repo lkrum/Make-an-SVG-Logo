@@ -15,6 +15,15 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
+const shapes = require('./Classes/shapes');
+
+
+// function to create logo based on user input
+function generateLogo(data) {
+ data.text
+
+
+}
 
 // prompts
 inquirer
@@ -43,10 +52,9 @@ inquirer
   ])
 
   .then((data) => {
-    // const readmeTxt = generateMarkdown(data);
-    // generateMarkdown(data);
-    // node writeFile method to create a markdown file using the generateMarkdown function
-    fs.writeFile('logo.svg', , (err) =>
+    const logoOutput = generateLogo(data);
+    generateLogo(data);
+    fs.writeFile('example.svg', logoOutput, (err) =>
       err ? console.error(err) : console.log('Generated logo.svg')
     );
   });
