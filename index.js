@@ -20,7 +20,7 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Circle, Square} = require('./Classes/shapes');
+const {Triangle, Circle, Square} = require('./Classes/shapes');
 
 
 // function to create logo based on user input
@@ -32,20 +32,17 @@ function generateLogo(data) {
   ${shape.createShape(data)}
   <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
   </svg>`
-  }
-
   // function for creating a triangle
-  // } if (data.shape === "triangle") {
-  //   var shape = new Triangle ();
-  //   return `<svg width="300" height="200">
-  //   ${shape.createShape(data)}
-  //   <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
-  //   </svg>`
-
-  // function for creating a square
-  if (data.shape == "square") {
+  } if (data.shape == "triangle") {
+    var shape = new Triangle ();
+    return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    ${shape.createShape(data)}
+    <text x="150" y="155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
+    </svg>`
+// function for creating a square
+  } if (data.shape == "square") {
     var shape = new Square();
-    return `<svg width="300" height="200" xmlns="http://www.w3.org/2000/svg">
+    return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
   ${shape.createShape(data)}
   <text x="150" y="120" font-size="65"  fill="${data.textColor}" text-anchor="middle">${data.text}</text>
   </svg>`
