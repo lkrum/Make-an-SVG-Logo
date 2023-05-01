@@ -1,5 +1,5 @@
 const {Triangle} = require('./shapes');
-
+const validateColor = require("validate-color").default;
 
 // testing triangle shape functionality
 describe('shape testing', () => {

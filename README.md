@@ -1,13 +1,18 @@
-# Make-an-SVG-Logo
+# Make an SVG Logo
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
+Using Inquirer and node, I have created a command-line interface that creates a simple SVG logo based on user input. Part of my previous job as a brand specialist was to create logos for clients using Adobe Photoshop and Illustrator. While Adobe offers great products, the technology can be expensive and difficult to use for beginners. My app allows users to quickly generate logos without needing any graphic design skills or software.
+
+Users will run node in their terminal and answer four questions indicating what shape, shape color, text, and text color they want for their logo. Once all questions have been answered, an SVG logo will be created automatically. If using the SVG VS Code extension, the SVG files can be exported and saved as PNGs.
+
+This application challenged me to use classes and subclasse for the first time as well as Jest to test each class to ensure that the code executed correctly.
 
 Link to video demo: 
 
-Sample logos:
+Taylor Swift-themed sample logos:
 
-![Square](/sqare.png)
+![Square](assets/sqare.png)
 ![Circle](assets/circle.png)
 ![Triangle](assets/triangle.png)
 
@@ -31,8 +36,10 @@ OR
 ## Credits 
 - [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4)
 - [Jest Package](https://www.npmjs.com/package/jest)
+- [Validate-Color Package](https://www.npmjs.com/package/validate-color) for validating colors
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started) for how to write SVG files and getting the coordinates for shapes
 - [codepen](https://codepen.io/pen/) to test what my image would look like
+- Bootcamp tutor John Titus helped me come up with the method for creating the shapes and made sure I was writing the class constructors correctly
 
 ## License
 MIT License
