@@ -4,7 +4,7 @@
 ## Description
 Using Inquirer and node, I have created a command-line interface that creates a simple SVG logo based on user input. Part of my previous job as a brand specialist was to create logos for clients using Adobe Photoshop and Illustrator. While Adobe offers great products, the technology can be expensive and difficult to use for beginners. My app allows users to quickly generate logos without needing any graphic design skills or software.
 
-Users will run node in their terminal and answer four questions indicating what shape, shape color, text, and text color they want for their logo. Once all questions have been answered, an SVG logo will be created automatically. If using the SVG VS Code extension, the SVG files can be exported and saved as PNGs.
+Users will run node in their terminal and answer four questions indicating what shape, shape color, text, and text color they want for their logo. Once all questions have been answered, an SVG logo will be created automatically. If using the [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg), the SVG files can be exported and saved as PNGs.
 
 This application challenged me to use classes and subclasse for the first time as well as Jest to test each class to ensure that the code executed correctly.
 
@@ -23,6 +23,7 @@ OR
 3. Install node by copying and pasting the code `npm init -y` in your terminal
 4. Install the inquirer package by copying and pasting the code `npm i inquirer@8.2.4` in your terminal
 5. Install jest by copying and pasting the code `npm install --save-dev jest`
+6. *Optional* Download the[SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg) to export your SVG file as a PNG file.
 
 
 ## Usage
@@ -30,8 +31,7 @@ OR
 *Note*: Make sure you have installed the necessary applications! 
 3. Run `node index.js` to start the application 
 4. Type in answers to each question
-5. Once you've answered the final question, a svg file titled "logo.svg" will be created6
-6. 
+5. Once you've answered the final question, a svg file titled "logo.svg" will be created
 
 ## Credits 
 - [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4)
