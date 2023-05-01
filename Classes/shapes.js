@@ -12,8 +12,8 @@ class Triangle extends Shape {
     super(shapeColor)
   }
   // add method for creating specific shape
-  createShape(data) {
-    return `<polygon points="150 15 15 185 285 185" fill = "${data.shapeColor}"/>`
+  createShape() {
+    return `<polygon points="150 15 15 185 285 185" fill="${this.shapeColor}"/>`
   }
 }
 
@@ -24,8 +24,8 @@ class Circle extends Shape {
     super(shapeColor)
   }
   // add method for creating a circle shape
-  createShape(data) {
-    return `<circle cx="150" cy="100" r="75" fill="${data.shapeColor}"/>`
+  createShape() {
+    return `<circle cx="150" cy="100" r="75" fill="${this.shapeColor}"/>`
   }
 }
 
@@ -35,11 +35,11 @@ class Square extends Shape {
     super(shapeColor)
   }
   // add method for creating a square shape
-  createShape(data) {
-    return `<rect x="75" y="25" width="150" height="150" fill="${data.shapeColor}"/>`
+  createShape() {
+    return `<rect x="75" y="25" width="150" height="150" fill="${this.shapeColor}"/>`
   }
 }
 
 
-
+// exporting the children classes
 module.exports = {Triangle, Circle, Square}

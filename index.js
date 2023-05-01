@@ -12,23 +12,23 @@ const {Triangle, Circle, Square} = require('./Classes/shapes');
 function generateLogo(data) {
 // function for creating a circle
   if (data.shape == "circle") {
-    var shape = new Circle();
+    const shape = new Circle(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-  ${shape.createShape(data)}
+  ${shape.createShape(data.shapeColor)}
   <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
   </svg>`
   // function for creating a triangle
   } if (data.shape == "triangle") {
-    var shape = new Triangle ();
+    var shape = new Triangle(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-    ${shape.createShape(data)}
+    ${shape.createShape(data.shapeColor)}
     <text x="150" y="155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
     </svg>`
 // function for creating a square
   } if (data.shape == "square") {
-    var shape = new Square();
+    var shape = new Square(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
-  ${shape.createShape(data)}
+   ${shape.createShape(data.shapeColor)}
   <text x="150" y="120" font-size="65"  fill="${data.textColor}" text-anchor="middle">${data.text}</text>
   </svg>`
   }
@@ -66,3 +66,4 @@ inquirer
       err ? console.error(err) : console.log('Generated logo.svg')
     );
   })
+
