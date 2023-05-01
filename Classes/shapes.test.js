@@ -1,13 +1,13 @@
-const shapeTest = require('./shapes');
+const {Triangle} = require('./shapes');
 
 
 // testing triangle shape functionality
 describe('shape testing', () => {
   describe('triangle', () => {
-    it('should take in user shape and color inputs and generates expected result', () => {
+    it('should take in shape and color inputs and generates expected result', () => {
       const shape = new Triangle();
-      shape.setColor("blue");
-      expect().toEqua('<polygon points="150, 18 244, 182 56, 182" fill="blue" />');
+      shape.setColor("pink");
+      expect(shape.render()).toEqua('<polygon points="150 15 15 185 285 185" fill="pink"/>');
     });
   });
 });

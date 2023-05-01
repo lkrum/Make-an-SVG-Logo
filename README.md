@@ -1,15 +1,15 @@
 # Make-an-SVG-Logo
-# Professional-README-Generator
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
 
 ## Description
 
 Link to video demo: 
 
-Link to sample logo: [Sample]() 
+Sample logos:
 
-
-![Preview image]()
+![Square](/sqare.png)
+![Circle](assets/circle.png)
+![Triangle](assets/triangle.png)
 
 ## Installation
 1. Copy the SSH key in my GitHub repo and paste `git clone <SSHKEY>` in your terminal to create a local copy on your computer\
