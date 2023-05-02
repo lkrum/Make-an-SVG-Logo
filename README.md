@@ -8,14 +8,16 @@ Users will run node in their terminal and answer four questions indicating what 
 
 This application challenged me to use classes and subclasses for the first time as well as Jest to test each class to ensure that the code executed correctly. To test my color inputs, I used the [Validate-Color Package](https://www.npmjs.com/package/validate-color) which greatly helped with validating hex code colors and keywords.
 
-Link to video demo: 
+Link to video demo: https://drive.google.com/file/d/1kIua2Z3UugiK05y2W63zfEkdkyG_hFKF/view?usp=sharing
 
 Taylor Swift-themed sample logos:
 
 ![Square](assets/sqare.png)
 ![Circle](assets/circle.png)
 ![Triangle](assets/triangle.png)
-![Triangle2](assets/Triangle2.png)
+![Triangle2](assets/fear.png)
+
+SVG file examples can be found in /Classes/examples.  
 
 ## Installation
 1. Copy the SSH key in my GitHub repo and paste `git clone <SSHKEY>` in your terminal to create a local copy on your computer\
@@ -40,6 +42,7 @@ OR
 - [mozilla](https://developer.mozilla.org/en-US/docs/Web/SVG/Tutorial/Getting_Started) for how to write SVG files and getting the coordinates for shapes
 - [codepen](https://codepen.io/pen/) to test what my image would look like
 - Bootcamp tutor John Titus helped me come up with the method for creating the shapes and made sure I was writing the class constructors correctly
+- Bootcamp TA Ian Darland helped me troubleshoot my test for my shape and shape color
 
 ## License
 MIT License

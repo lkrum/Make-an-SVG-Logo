@@ -1,6 +1,4 @@
-// To do:
-// test the function with Jest (In progress)
-
+// required files
 const inquirer = require('inquirer');
 const fs = require('fs');
 const { Triangle, Circle, Square } = require('./Classes/shapes');
