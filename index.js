@@ -1,7 +1,5 @@
 // To do:
-// create a function that lets user input text choices (DONE)
-// create a function that generates a logo based on user's inputs (DONE)
-// test the function with Jest
+// test the function with Jest (In progress)
 
 const inquirer = require('inquirer');
 const fs = require('fs');
@@ -22,7 +20,8 @@ function generateLogo(data) {
     var shape = new Triangle(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     ${shape.createShape(data.shapeColor)}
-    <text x="150" y="155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
+    ${shape.createText(data.textColor, data.text)}
+    // <text x="150" y="155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
     </svg>`
 // function for creating a square
   } if (data.shape == "square") {
