@@ -1,6 +1,6 @@
-const { Shape, Triangle, Circle, Square } = require('./shapes');
+const { Triangle, Circle, Square } = require('./shapes');
 
-// const validateColor = require("validate-color").default;
+const validateColor = require("validate-color").default;
 
 // shape testing -- Ian (TA) helped me get this function to work
 // testing triangle shape functionality
@@ -37,18 +37,42 @@ describe('shape testing', () => {
 });
 
 // testing for text length
+// created function for string length
 function checkTextLength(text) {
   if (text.length > 3) {
     throw new Error('Text must be fewer than 4 characters long.');
+  } else {
+    console.log('yay! Text is the right length')
+  }
 }
-}
-
+// testing that strings over 3 characters in length return a throw error
 describe('text testing', () => {
-  describe('string length', () => {
+  describe('string length over 3', () => {
     it('should take in text input and throw an error if text length is over 3 characters', () => {
-      const cb = () => checkTextLength('taylor');
+      const cb = () => checkTextLength('TaylorSwift');
       const err = new Error('Text must be fewer than 4 characters long.');
       expect(cb).toThrowError(err);
+    });
+  });
+})
+
+// testing that strings fewer than 3 characters in length pass
+describe('text testing', () => {
+  describe('string length under 3', () => {
+    it('should take in text input and console.log if text length is under 3 characters', () => {
+      const text = checkTextLength('tay');
+      const pass = console.log('yay! Text is the right length');
+      expect(text).toEqual(pass);
+    });
+  });
+})
+
+// validating color inputs
+describe('color testing', () => {
+  describe('colors', () => {
+    it('should take in a color input and validate it', () => {
+      
+      expect(text).toEqual(pass);
     });
   });
 })

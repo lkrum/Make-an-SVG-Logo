@@ -49,4 +49,4 @@ class Square extends Shape {
 
 
 // exporting the children classes
-module.exports = { Shape, Triangle, Circle, Square }
+module.exports = { Triangle, Circle, Square }
