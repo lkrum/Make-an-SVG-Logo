@@ -26,7 +26,7 @@ OR
 3. Install node by copying and pasting the code `npm init -y` in your terminal
 4. Install the inquirer package by copying and pasting the code `npm i inquirer@8.2.4` in your terminal
 5. Install jest by copying and pasting the code `npm install --save-dev jest`
-6. *Optional* Download the[SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg) to export your SVG file as a PNG file.
+6. *Optional* Download the [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg) to export your SVG file as a PNG file.
 
 ## Usage
 1. Open the index.js file in your terminal\
@@ -34,6 +34,7 @@ OR
 2. Run `node index.js` to start the application 
 3. Type in answers to each question
 4. Once you've answered the final question, a SVG file titled "logo.svg" will be created
+5. *Optional* Using the [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg), export your SVG file as a PNG to use in future projects
 
 ## Credits 
 - [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4)

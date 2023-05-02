@@ -56,10 +56,10 @@ describe('text testing', () => {
   });
 })
 
-// testing that strings fewer than 3 characters in length pass
+// testing that strings fewer than 4 characters in length pass
 describe('text testing', () => {
-  describe('string length under 3', () => {
-    it('should take in text input and console.log if text length is under 3 characters', () => {
+  describe('string length under 4', () => {
+    it('should take in text input and console.log if text length is under 4 characters', () => {
       const text = checkTextLength('tay');
       const pass = console.log('yay! Text is the right length');
       expect(text).toEqual(pass);
