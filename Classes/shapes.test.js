@@ -67,12 +67,55 @@ describe('text testing', () => {
   });
 })
 
-// validating color inputs
+// function to validate the color input
+function validColor(color) {
+  if (validateColor(color) == undefined) {
+    console.error('Not a valid color.')
+  } else {
+    console.log('What a beautiful color!')
+  }
+}
+
+// validating that a real hex code passes
 describe('color testing', () => {
   describe('colors', () => {
     it('should take in a color input and validate it', () => {
-      
-      expect(text).toEqual(pass);
+      const colorCheck = validColor('#ffc0ca')
+      const pass = console.log('What a beautiful color!')
+      expect(colorCheck).toEqual(pass);
+    });
+  });
+})
+
+// validating that a real color keyword passes
+describe('color testing', () => {
+  describe('colors', () => {
+    it('should take in a color input and validate it', () => {
+      const colorCheck = validColor('aquamarine')
+      const pass = console.log('What a beautiful color!')
+      expect(colorCheck).toEqual(pass);
+    });
+  });
+})
+
+// validating that an invalid color hexcode fails
+describe('color testing', () => {
+  describe('colors', () => {
+    it('should take in a color input and validate it', () => {
+      const colorCheck = validColor('#8A2tBE2')
+      const fail = console.log('Not a valid color.')
+      expect(colorCheck).toEqual(fail);
+    });
+  });
+})
+
+// validating that an invalid color keyword fails
+describe('color testing', () => {
+  describe('colors', () => {
+    it('should take in a color input and validate it', () => {
+      const colorCheck = validColor('blueTay')
+      const fail = console.log('Not a valid color.')
+      expect(colorCheck).toEqual(fail);
     });
   });
 })

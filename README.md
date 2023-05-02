@@ -6,7 +6,7 @@ Using Inquirer and node, I have created a command-line interface that creates a 
 
 Users will run node in their terminal and answer four questions indicating what shape, shape color, text, and text color they want for their logo. Once all questions have been answered, an SVG logo will be created automatically. If using the [SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg), the SVG files can be exported and saved as PNGs.
 
-This application challenged me to use classes and subclasse for the first time as well as Jest to test each class to ensure that the code executed correctly.
+This application challenged me to use classes and subclasses for the first time as well as Jest to test each class to ensure that the code executed correctly. To test my color inputs, I used the [Validate-Color Package](https://www.npmjs.com/package/validate-color) which greatly helped with validating hex code colors and keywords.
 
 Link to video demo: 
 
@@ -15,6 +15,7 @@ Taylor Swift-themed sample logos:
 ![Square](assets/sqare.png)
 ![Circle](assets/circle.png)
 ![Triangle](assets/triangle.png)
+![Triangle2](assets/Triangle2.png)
 
 ## Installation
 1. Copy the SSH key in my GitHub repo and paste `git clone <SSHKEY>` in your terminal to create a local copy on your computer\
@@ -25,13 +26,12 @@ OR
 5. Install jest by copying and pasting the code `npm install --save-dev jest`
 6. *Optional* Download the[SVG VS Code extension](https://marketplace.visualstudio.com/items?itemName=jock.svg) to export your SVG file as a PNG file.
 
-
 ## Usage
 1. Open the index.js file in your terminal\
 *Note*: Make sure you have installed the necessary applications! 
-3. Run `node index.js` to start the application 
-4. Type in answers to each question
-5. Once you've answered the final question, a svg file titled "logo.svg" will be created
+2. Run `node index.js` to start the application 
+3. Type in answers to each question
+4. Once you've answered the final question, a SVG file titled "logo.svg" will be created
 
 ## Credits 
 - [Inquirer Package](https://www.npmjs.com/package/inquirer/v/8.2.4)

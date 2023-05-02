@@ -13,17 +13,12 @@ class Shape {
 class Triangle extends Shape {
   constructor(shapeColor, text, textColor) {
     super(shapeColor, text, textColor);
-
   }
   // add method for creating specific shape
   createShape() {
     return `<polygon points="150 15 15 185 285 185" fill="${this.shapeColor}"/>`
   }
-  createText() {
-    return ` // <text x="150" y="155" font-size="60" text-anchor="middle" fill="${this.textColor}">${this.text}</text>`
-  }
 }
-
 
 // creating child Circle class and inheriting properties
 class Circle extends Shape {

@@ -3,32 +3,33 @@
 
 const inquirer = require('inquirer');
 const fs = require('fs');
-const {Triangle, Circle, Square} = require('./Classes/shapes');
+const { Triangle, Circle, Square } = require('./Classes/shapes');
 
 
 // function to create logo based on user input
 function generateLogo(data) {
-// function for creating a circle
+  // function for creating a circle
   if (data.shape == "circle") {
     const shape = new Circle(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
   ${shape.createShape(data.shapeColor)}
-  <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
+ <text x="150" y="120" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
   </svg>`
-  // function for creating a triangle
+
+    // function for creating a triangle
   } if (data.shape == "triangle") {
     var shape = new Triangle(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
     ${shape.createShape(data.shapeColor)}
-    ${shape.createText(data.textColor, data.text)}
-    // <text x="150" y="155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
+    <text x= "150" y = "155" font-size="60" text-anchor="middle" fill="${data.textColor}">${data.text}</text>
     </svg>`
-// function for creating a square
+
+    // function for creating a square
   } if (data.shape == "square") {
     var shape = new Square(data.shapeColor);
     return `<svg version="1.1" width="300" height="200" xmlns="http://www.w3.org/2000/svg">
    ${shape.createShape(data.shapeColor)}
-  <text x="150" y="120" font-size="65"  fill="${data.textColor}" text-anchor="middle">${data.text}</text>
+ <text x="150" y="120" font-size="65"  fill="${data.textColor}" text-anchor="middle">${data.text}</text>
   </svg>`
   }
 }
