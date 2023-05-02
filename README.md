@@ -43,6 +43,7 @@ OR
 - [codepen](https://codepen.io/pen/) to test what my image would look like
 - Bootcamp tutor John Titus helped me come up with the method for creating the shapes and made sure I was writing the class constructors correctly
 - Bootcamp TA Ian Darland helped me troubleshoot my test for my shape and shape color
+- Bootcamp tutor Patrick Lake helped me create an init function and format my if statement for validating text length after the .then in the index.js file
 
 ## License
 MIT License

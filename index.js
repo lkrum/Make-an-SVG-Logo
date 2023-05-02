@@ -32,8 +32,10 @@ function generateLogo(data) {
   }
 }
 
-// prompts
-inquirer
+// Patrick Lake helped me come up with the init function so that the prompts would start over if the user inputted a text value over 3 characters long
+function init() {
+  // prompts
+  inquirer
   .prompt([
     {
       type: 'input',
@@ -46,7 +48,7 @@ inquirer
       name: 'textColor',
     },
     {
-      type: 'checkbox',
+      type: 'list',
       message: 'Choose a shape for your logo',
       choices: ['circle', 'triangle', 'square'],
       name: 'shape',
@@ -59,9 +61,16 @@ inquirer
   ])
 
   .then((data) => {
+    if (data.text.length > 3) {
+      console.log("Text input must not be over 3 characters long.");
+      return init()
+    }
     const logoOutput = generateLogo(data);
     fs.writeFile('logo.svg', logoOutput, (err) =>
-      err ? console.error(err) : console.log('Generated logo.svg')
+    err ? console.error(err) : console.log('Generated logo.svg')
     );
   })
+}
 
+init();
+  
